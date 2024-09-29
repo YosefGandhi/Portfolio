@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.4.1/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("fgshIsxFBH5KqpY_e");
+   })();
+</script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <ul id="nav-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#project">My Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Icon hamburger -->
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navList = document.getElementById('nav-list');
+  
+    hamburger.addEventListener('click', () => {
+      navList.classList.toggle('nav-active');
+      hamburger.classList.toggle('toggle');
+    });
+  </script>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="image-text-container">
+        <img src="Pasfoto.png" alt="Round Image" class="round-image">
+        <div class="text-container">
+            <h3>Yosef Ezekiel Gandhi</h3>
+            <h5>Sogemaking</h5>
+            <h4>Computer Science Student | Bina Nusantara University</h4>
+            <a href="path/to/your-cv.pdf" class="cv-button">Download My CV</a>
+            <a href="https://www.linkedin.com/in/yosef-ezekiel-gandhi-sogemaking-bb843132b" class="social-button"><img src="linkedin.png" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/yosgandhi" class="social-button"><img src="instagram.png" alt="Instagram"></a>
+            <a href="https://line.me/ti/p/vuyi6nPMjP" class="social-button"><img src="line.png" alt="Line"></a>
+        </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about-content">
+        <div class="text-image-container">
+            <div class="text-content">
+                <h2>About Me</h2>
+                <p>
+                    Hi, my name is Yosef Ezekiel Gandhi Sogemaking and I’m one of the Computer Science students at Binus University 
+                    with a deep interest in software development, algorithms, and problem-solving. I have developed good foundations in 
+                    programming, data structures, and various fields of computer science like web design & development, and also database management.
+                </p>
+                <p>
+                    I am passionate about creating efficient solutions and continually expanding my skill set. 
+                    I also have hands-on experience with design tools such as Figma and Axure, which have 
+                    been instrumental in prototyping user interfaces and creating intuitive user experiences. 
+                    I enjoy tackling challenges that require both creative thinking and technical expertise. 
+                    It is always a pleasure for me to learn new programming languages and design tools.
+                </p>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Project Section -->
+<section id="project">
+  <h2>PREVIOUS PROJECTS</h2>
+  <div class="project-container">
+    <div class="project-item">
+      <a href="https://github.com/YosefGandhi/My-Figma-Designs/tree/bfe2628a941a59fe6769e070854a876133c63e4f" target="_blank">
+        <img src="Figma.gif" alt="Project 1">
+        <h3>Figma Projects</h3>
+        <p>Figma has become one of my most essential tools for 
+          creating engaging and user-friendly website and mobile app layouts. Its intuitive interface and 
+          powerful collaboration features make it my go-to choice for both wireframing and high-fidelity prototyping.</p>
+      </a>
+    </div>
+    <div class="project-item">
+      <a href="https://github.com/YosefGandhi/Kalkulator-Deposito" target="_blank">
+        <img src="calcu2.gif" alt="Project 2">
+        <h3>C++ Deposit Calculator</h3>
+        <p>I created a Deposit Calculator using C++ designed to compute detailed interest earnings and 
+          investment growth over a selected tenor and time period, with a focus on accuracy and flexibility for users. 
+          The program simulates a bank deposit investment, offering an intuitive way to calculate 
+          gross and net earnings based on input parameters such as deposit amount, tenor, and deposit duration.</p>
+      </a>
+    </div>
+    <div class="project-item">
+      <a href="https://github.com/YosefGandhi/Axure-RP/tree/main" target="_blank">
+        <img src="axureillustration.gif" alt="Project 3">
+        <h3>Axure Clothing Store App</h3>
+        <p>I developed a comprehensive prototype for a clothing store application using Axure, 
+          a tool I rely on for creating detailed and interactive user experiences. 
+          The project showcases my ability to design intuitive and aesthetically pleasing interfaces 
+          that enhance user engagement while focusing on smooth navigation and functionality.</p>
+      </a>
+    </div>
+
+    <div class="project-item">
+      <a href="https://github.com/YosefGandhi/JCC-Website" target="_blank">
+        <img src="website.gif" alt="Project 4">
+        <h3>JCC Website</h3>
+        <p>In this project, I created a website called "JCC", Jockey's Convention Center. 
+          A simple website about convention center information, events calendar, Building's prices for events, etc. 
+          I use Html, CSS, and JS to design and build it.</p>
+      </a>
+    </div>    
+  </div>
+</section>
+
+
+  <!-- Contact Me Section -->
+<section id="contact">
+  <h2>Leave Your Thoughts Here</h2>
+  <form id="contact-form" onsubmit="sendEmail(event)">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<script type="text/javascript">
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('service_h96082b', 'template_2tfip5o', '#contact-form')
+      .then(function(response) {
+         alert('Message Sent Successfully!');
+      }, function(error) {
+         alert('Failed to send message. Please try again.');
+      });
+  }
+</script>
+
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2024 Yosef's Portfolio. All Rights Reserved. (DILARANG MALING)</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
